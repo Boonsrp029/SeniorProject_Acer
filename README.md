@@ -1,2 +1,2 @@
-# SeniorProject_Acer
- senior project for independent study 499
+# SeniorProject
+Durable Equipment tracking system using QR CODE written in vue.js language
