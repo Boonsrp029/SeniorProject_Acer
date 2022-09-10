@@ -1,28 +1,23 @@
 <template>
   <h1>รายชื่อครุภัณฑ์</h1>
   <table id="tableComponent" class="table table-bordered table-striped">
-    
+    <thead>
+      <tr>
+        <th>หมายเลขครุภัณฑ์</th>
+        <th>ชื่อครุภัณฑ์</th>
+        <th>ราคา</th>
+        <th>ปีที่ซื้อ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ id }}</td>
+        <td>{{ name }}</td>
+        <td>{{ price }}</td>
+        <td>{{ purchase_year }}</td>
+      </tr>
+    </tbody>
   </table>
-  <!-- <span>
-    <table>
-      <thead>
-        <tr>
-          <th>หมายเลขครุภัณฑ์</th>
-          <th>ชื่อครุภัณฑ์</th>
-          <th>ราคา</th>
-          <th>ปีที่ซื้อ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ id }}</td>
-          <td>{{ name }}</td>
-          <td>{{ price }}</td>
-          <td>{{ purchase_year }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </span> -->
 </template>
 
 <script>
