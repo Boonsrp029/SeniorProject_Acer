@@ -1,6 +1,9 @@
 <template>
   <h1>รายชื่อครุภัณฑ์</h1>
-  <span>
+  <table id="tableComponent" class="table table-bordered table-striped">
+    
+  </table>
+  <!-- <span>
     <table>
       <thead>
         <tr>
@@ -19,7 +22,7 @@
         </tr>
       </tbody>
     </table>
-  </span>
+  </span> -->
 </template>
 
 <script>
