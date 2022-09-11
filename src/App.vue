@@ -1,4 +1,5 @@
 <template>
+  <LoginPage/>
   <div class="container text-center  mt-5 mb-5">
     <EquipmentList :fields='fields' :equipmentData ="equipmentData"/>
   </div>
@@ -6,11 +7,14 @@
 
 <script>
 import EquipmentList from './components/EquipmentList.vue';
+import LoginPage from './components/LoginPage.vue';
+
 
 export default {
   name: "App",
   components: {
-    EquipmentList
+    EquipmentList,
+    LoginPage
   },
   setup() {
     //An array of values for the data
