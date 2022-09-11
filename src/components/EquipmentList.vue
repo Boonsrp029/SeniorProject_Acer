@@ -1,20 +1,14 @@
 <template>
-  <h1>รายชื่อครุภัณฑ์</h1>
+  <h1 class="mt-5 fw-bolder text-success">รายชื่อครุภัณฑ์</h1>
   <table id="tableComponent" class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th>หมายเลขครุภัณฑ์</th>
-        <th>ชื่อครุภัณฑ์</th>
-        <th>ราคา</th>
-        <th>ปีที่ซื้อ</th>
+        <th v-for="field in fields" :key="field">{{ field }}</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>{{ id }}</td>
-        <td>{{ name }}</td>
-        <td>{{ price }}</td>
-        <td>{{ purchase_year }}</td>
+      <tr v-for="item in equipmentData" :key="item">
+        <td v-for="field in fields" :key="field">{{ item[field] }}</td>
       </tr>
     </tbody>
   </table>
@@ -23,15 +17,15 @@
 <script>
 export default {
   name: "EquipmentList",
-  data() {
-    return {
-      id: "05.61100100018.ผ630001",
-      name: "เครื่องสำรองไฟฟ้าสำหรับคอมพิวเตอร์แม่ข่าย",
-      price: 24064,
-      purchase_year: 2563,
-    };
+  props: {
+    equipmentData: {
+      type: Array,
+    },
+    fields: {
+      type: Array,
+    }
   },
-};
+}
 </script>
 
 <style scoped>
