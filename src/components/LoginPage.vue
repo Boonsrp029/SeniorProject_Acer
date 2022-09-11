@@ -1,5 +1,8 @@
 <template>
-  <div></div>
+  <h1>ยินดีต้อนรับสู่ระบบตรวจสอบครุภัณฑ์โดยใช้ QR CODE</h1>
+  <div>
+
+  </div>
 </template>
 
 <script>
