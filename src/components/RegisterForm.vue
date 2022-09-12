@@ -56,6 +56,16 @@
       <h2>ปีที่ซื้อ</h2>
       <input type="number" v-model="budget_year">
     </div>
+    <div class="form-control">
+      <label for="budget_type">หมวดเงิน</label>
+      <select>
+        <option value="เฉพาะเจาะจง">เฉพาะเจาะจง</option>
+        <option value="งบประมาณกลางของมหวิทยาลัย">งบประมาณกลางของมหวิทยาลัย</option>
+        <option value="งบประมาณที่ได้จากส่วนกลาง">งบประมาณที่ได้จากส่วนกลาง</option>
+      </select>
+      <h2>ปีที่ซื้อ</h2>
+      <input type="number" v-model="budget_year">
+    </div>
   </form>
 </template>
 
