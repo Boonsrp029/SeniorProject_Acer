@@ -1,49 +1,12 @@
 <template>
+  <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+  </nav>
   <router-view/>
 </template>
 
-<script>
-import EquipmentList from './components/EquipmentList.vue';
-import LoginPage from './components/LoginPage.vue';
-
-
-export default {
-  name: "App",
-  components: {
-    EquipmentList,
-    LoginPage
-  },
-  setup() {
-    //An array of values for the data
-    const equipmentData = [
-      {
-        ID: "05.61100100018.ผ630001",
-        Name: "เครื่องสำรองไฟฟ้าสำหรับคอมพิวเตอร์แม่ข่าย",
-        Price: 24064,
-        Purchase_year: 2563,
-      },
-      {
-        ID: "05.61100100018.ผ630002",
-        Name: "เครื่องสำรองไฟฟ้าสำหรับคอมพิวเตอร์แม่ข่าย",
-        Price: 24064,
-        Purchase_year: 2563,
-      },
-      {
-        ID: "05.74400010002.ผ630001",
-        Name: "เครื่องคอมพิวเตอร์สำหรับประมวลผลระดับสูง",
-        Price: 29300,
-        Purchase_year: 2563,
-      },
-    ];
-    const fields = ["ID", "Name", "Price", "Purchase_year"]
-    return { equipmentData, fields }
-  },
-}
-</script>
-
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
