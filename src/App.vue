@@ -3,33 +3,22 @@
     <nav class="navbar bg-light">
       <div class="container-fluid">
         <a class="navbar-brand">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/th/4/4e/SC_CMU_Logo.png"
-            alt="Logo"
-            width="100"
-            height="85"
-            class="d-inline-block align-text-center"
-          />
+          <img src="https://upload.wikimedia.org/wikipedia/th/4/4e/SC_CMU_Logo.png" alt="Logo" width="100" height="85"
+            class="d-inline-block align-text-center" />
           ระบบการตรวจสอบครุภัณฑ์ หน่วยพัสดุ คณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่
         </a>
+        <div>
+          <form class="form-inline my-2 my-lg-0">
+            <a class="nav-link" href="#/login">ล็อกอิน</a>
+          </form>
+        </div>
       </div>
-      <form class="form-inline my-2 my-lg-0">
-        <a href="#/login">ล็อกอิน</a>
-        <button class="btn btn-outline-success" href="#/register">สมัครเป็นผู้ดูแลระบบ</button>
-      </form>
     </nav>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">เมนูระบบครุภัณฑ์</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,10 +27,10 @@
               <a class="nav-link" href="#">หน้าหลัก</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ลงทะเบียนครุภัณฑ์</a>
+              <a class="nav-link" href="#" @click="isAdmin">ลงทะเบียนครุภัณฑ์</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">เปลี่ยนสถานะครุภัณฑ์</a>
+              <a class="nav-link" href="#" @click="isAdmin">เปลี่ยนสถานะครุภัณฑ์</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">รายชื่อครุภัณฑ์ที่กำลังส่งซ่อม</a>
@@ -51,22 +40,32 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
           </form>
+          <p>
+            หมายเหตุ:
+            ครุภัณฑ์ที่แสดงในการค้นหาจะแสดงเฉพาะครุภัณฑ์ที่ยังไม่ได้แทงจำหน่ายออกเท่านั้น
+          </p>
         </div>
       </div>
     </nav>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    isAdmin(e) {
+      alert("สามารถทำได้เฉพาะผู้ดูแลระบบเท่านั้น")
+      e.preventDefault()
+    }
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -88,6 +87,7 @@ nav {
       color: #42b983;
     }
   }
+
   p {
     color: white;
   }
