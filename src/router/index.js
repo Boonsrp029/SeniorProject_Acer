@@ -1,5 +1,5 @@
-import LoginPage from '@/views/LoginPage.vue'
-import SignupPage from '@/views/SignupPage.vue'
+//import LoginPage from '@/views/LoginPage.vue'
+//import SignupPage from '@/views/SignupPage.vue'
 import MainPage from '@/views/MainPage.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
@@ -12,12 +12,12 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: LoginPage
+    component: () => import(/* webpackChunkName: "login" */ '../views/LoginPage.vue')
   },
   {
     path: '/register',
     name: 'register',
-    component: SignupPage
+    component: () => import(/* webpackChunkName: "register" */ '../views/SignupPage.vue')
   },
   // {
   //   path: '/about',
