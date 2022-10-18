@@ -1,7 +1,12 @@
 //import LoginPage from '@/views/LoginPage.vue'
 //import SignupPage from '@/views/SignupPage.vue'
+import ChangeStatusPage from '@/views/ChangeEQStatus.vue'
+import ForgotPassword from '@/views/ForgotPassword.vue'
+import LoginPage from '@/views/LoginPage.vue'
 import MainPage from '@/views/MainPage.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import RegisterPage from '@/views/RegisterPage.vue'
+import RepairPage from '@/views/RepairPage.vue'
+import { createRouter, createWebHistory  } from 'vue-router'
 
 const routes = [
   {
@@ -12,12 +17,32 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: () => import(/* webpackChunkName: "login" */ '../views/LoginPage.vue')
+    component: LoginPage
   },
   {
-    path: '/register',
-    name: 'register',
-    component: () => import(/* webpackChunkName: "register" */ '../views/SignupPage.vue')
+    path: '/registeradmin',
+    name: 'registeradmin',
+    component: RegisterPage
+  },
+  {
+    path: '/forgot',
+    name: 'forgotpassword',
+    component: ForgotPassword
+  },
+  {
+    path: '/registeritem',
+    name: 'registeritem',
+    component: RegisterPage
+  },
+  {
+    path: '/changestatus',
+    name: 'changestatus',
+    component: ChangeStatusPage
+  },
+  {
+    path: '/repair',
+    name: 'repairpage',
+    component: RepairPage
   },
   // {
   //   path: '/about',
@@ -30,7 +55,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory (),
   routes
 })
 

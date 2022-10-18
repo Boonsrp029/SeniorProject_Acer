@@ -1,6 +1,7 @@
 <template>
-  <LoginForm/>
-  <div class="col-md-3"></div>
+  <div class="col-md-3" id="login">
+    <LoginForm/>
+  </div>
 </template>
 
 <script>

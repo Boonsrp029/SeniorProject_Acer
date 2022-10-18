@@ -29,7 +29,7 @@
         </form>
       </div>
       <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#/register">สมัครเป็นผู้ดูแลระบบ</a>
+        <a class="dropdown-item" href="/registeradmin">สมัครเป็นผู้ดูแลระบบ</a>
         <a class="dropdown-item" href="/forgot">ลืมรหัสผ่าน</a>
     </div>
   </div>

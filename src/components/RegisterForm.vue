@@ -32,7 +32,7 @@
       <label for="equipment_type">หมวดหมู่ครุภัณฑ์</label>
       <select>
         <option value="ครุภัณฑ์คอมพิวเตอร์">ครุภัณฑ์คอมพิวเตอร์</option>
-        <option value="ครุภัณฑ์โต๊ะ">ครุภัณฑ์ครุภัณฑ์โต๊ะ</option>
+        <option value="ครุภัณฑ์โต๊ะ">ครุภัณฑ์โต๊ะ</option>
         <option value="ครุภัณฑ์อุปกรณ์เสริม">ครุภัณฑ์อุปกรณ์เสริม</option>
       </select>
     </div>
@@ -85,7 +85,7 @@ export default {
       budget_classification: "",
       budget_year:0,
       budget_type: "",
-      puchase_year:0,
+      purchase_year:0,
       purchase_method: "",
     }
   }
