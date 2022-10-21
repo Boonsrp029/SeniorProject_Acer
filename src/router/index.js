@@ -6,6 +6,7 @@ import LoginPage from '@/views/LoginPage.vue'
 import MainPage from '@/views/MainPage.vue'
 import RegisterPage from '@/views/RegisterPage.vue'
 import RepairPage from '@/views/RepairPage.vue'
+import SignUp from '@/views/SignupPage.vue'
 import { createRouter, createWebHistory  } from 'vue-router'
 
 const routes = [
@@ -22,7 +23,7 @@ const routes = [
   {
     path: '/registeradmin',
     name: 'registeradmin',
-    component: RegisterPage
+    component: SignUp
   },
   {
     path: '/forgot',

@@ -30,10 +30,10 @@
               <router-link class="nav-link" to="/changestatus">เปลี่ยนสถานะครุภัณฑ์</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">รายชื่อครุภัณฑ์ที่กำลังส่งซ่อม</a>
+              <a class="nav-link" href="/">รายชื่อครุภัณฑ์ที่กำลังส่งซ่อม</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">รายชื่อครุภัณฑ์ที่แทงจำหน่าย</a>
+              <a class="nav-link" href="/">รายชื่อครุภัณฑ์ที่แทงจำหน่าย</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -66,7 +66,9 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Sarabun', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

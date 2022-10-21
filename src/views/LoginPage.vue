@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-3" id="login">
+  <div id="login">
     <LoginForm/>
   </div>
 </template>
