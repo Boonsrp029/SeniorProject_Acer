@@ -1,36 +1,42 @@
 <template>
-    <h1>สมัครการเป็นผู้ดูแลระบบ</h1>
-    <form @submit.prevent="checkpassword">
-        <div class="mb-3">
-            <label class="form-label">ชื่อเข้าใช้งาน
-                <input type="text" class="form-control" v-model="admindata.username" />
-            </label>
+    <div>
+        <h1>สมัครการเป็นผู้ดูแลระบบ</h1>
+        <div class="signupform">
+            <form @submit.prevent="checkpassword">
+                <div class="mb-3">
+                    <label class="form-label">ชื่อเข้าใช้งาน
+                        <input type="text" class="form-control" v-model="admindata.username" />
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">รหัสผ่าน
+                        <input type="password" class="form-control" v-model="admindata.password" />
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ยืนยันรหัสผ่าน
+                        <input type="password" class="form-control" v-model="admindata.confirmPassword" />
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ชื่อ
+                        <input type="text" class="form-control" v-model="admindata.firstname" />
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">นามสกุล
+                        <input type="text" class="form-control" v-model="admindata.lastname" />
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label class="form-label">รหัสผ่าน
-                <input type="password" class="form-control" v-model="admindata.password" />
-            </label>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">ยืนยันรหัสผ่าน
-                <input type="password" class="form-control" v-model="admindata.confirmPassword" />
-            </label>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">ชื่อ
-                <input type="text" class="form-control" v-model="admindata.firstname" />
-            </label>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">นามสกุล
-                <input type="text" class="form-control" v-model="admindata.lastname" />
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 </template>
 
 <script>
+//import {ref} from 'vue'
+//import {useRouter, useRoute} from 'vue-router'
 export default {
     name: "SignupForm",
     data() {

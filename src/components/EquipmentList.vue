@@ -21,7 +21,8 @@
           <button type="button" class="btn btn-warning">เปลี่ยนสถานะ</button>
         </td>
         <td v-else>
-          <button type="button" class="btn btn-info">ดูรายละเอียด</button>
+          <router-link class="btn btn-info" to="/eqdetail/:id" :key="list.id">ดูรายละเอียดครุภัณฑ์</router-link>
+          <button type="button" class="btn btn-info">ประวัติการส่งซ่อม</button>
           <button type="button" class="btn btn-primary">แก้ไขรายละเอียด</button>
           <button type="button" class="btn btn-warning">เปลี่ยนสถานะ</button>
         </td>
