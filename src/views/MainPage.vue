@@ -5,7 +5,7 @@
         <br>
         <h2>หน่วยพัสดุ คณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่</h2>
         <br>
-        <EquipmentList />
+        <EquipmentList/>
     </div>
 
 </template>
@@ -15,7 +15,8 @@ import EquipmentList from '@/components/EquipmentList.vue';
 
 export default {
     name: "MainPage",
-    components: { EquipmentList }
+    components: { EquipmentList },
+    props: ["list"]
 }
 </script>
 

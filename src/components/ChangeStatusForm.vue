@@ -24,20 +24,26 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-block">
-                <button type="button" class="btn btn-primary">ตกลง</button>
-                <button type="button" class="btn btn-danger">กลับไปหน้าหลัก</button>
+                <button type="submit" class="btn btn-primary">ตกลง</button>
+                <button type="button" class="btn btn-danger" @click="toMainpage">กลับไปหน้าหลัก</button>
             </div>
         </form>
     </div>
 </template>
 
 <script>
+import MainPage from '@/views/MainPage.vue'
 export default {
     name: "ChangeStatus",
     data() {
         return {
             id: "62054616468ก.03",
             equipmentstatus: ""
+        }
+    },
+    methods: {
+        toMainpage() {
+            return MainPage
         }
     }
 }
