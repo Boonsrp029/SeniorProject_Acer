@@ -32,7 +32,6 @@
 </template>
 
 <script>
-import MainPage from '@/views/MainPage.vue'
 export default {
     name: "ChangeStatus",
     data() {
@@ -43,7 +42,7 @@ export default {
     },
     methods: {
         toMainpage() {
-            return MainPage
+            return '@/views/MainPage'
         }
     }
 }
